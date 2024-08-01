@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Delivery Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Grocery Delivery App</h1>
+    </header>
+
+    <main>
+        <section id="productList">
+            <h2>Available Groceries</h2>
+            <div class="product" data-price="2.5">
+                <h3>Apples</h3>
+                <p>$2.50 per lb</p>
+                <button onclick="addToCart('Apples', 2.5)">Add to Cart</button>
+            </div>
+            <div class="product" data-price="3.0">
+                <h3>Bananas</h3>
+                <p>$3.00 per lb</p>
+                <button onclick="addToCart('Bananas', 3.0)">Add to Cart</button>
+            </div>
+            <div class="product" data-price="4.0">
+                <h3>Carrots</h3>
+                <p>$4.00 per lb</p>
+                <button onclick="addToCart('Carrots', 4.0)">Add to Cart</button>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cartItems">
+                <!-- Cart items will be added here -->
+            </ul>
+            <p id="totalPrice">Total: $0.00</p>
+            <button onclick="placeOrder()">Place Order</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Grocery Delivery App</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
